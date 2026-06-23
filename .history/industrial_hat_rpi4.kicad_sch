@@ -4404,7 +4404,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_SPDT"
+		(symbol "Switch:SW_SPST"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -4415,7 +4415,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "SW"
-				(at 0 5.08 0)
+				(at 0 3.175 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -4424,8 +4424,8 @@
 					)
 				)
 			)
-			(property "Value" "SW_SPDT"
-				(at 0 -5.08 0)
+			(property "Value" "SW_SPST"
+				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -4446,17 +4446,6 @@
 				)
 			)
 			(property "Datasheet" ""
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Switch, single pole double throw"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4467,7 +4456,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
+			(property "Description" "Single Pole Single Throw (SPST) switch"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4478,10 +4467,21 @@
 					)
 				)
 			)
-			(symbol "SW_SPDT_0_1"
+			(property "ki_keywords" "switch lever"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_SPST_0_0"
 				(circle
 					(center -2.032 0)
-					(radius 0.4572)
+					(radius 0.508)
 					(stroke
 						(width 0)
 						(type default)
@@ -4492,7 +4492,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.651 0.254) (xy 1.651 2.286)
+						(xy -1.524 0.254) (xy 1.524 1.778)
 					)
 					(stroke
 						(width 0)
@@ -4503,19 +4503,8 @@
 					)
 				)
 				(circle
-					(center 2.032 2.54)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 -2.54)
-					(radius 0.4572)
+					(center 2.032 0)
+					(radius 0.508)
 					(stroke
 						(width 0)
 						(type default)
@@ -4525,20 +4514,9 @@
 					)
 				)
 			)
-			(symbol "SW_SPDT_1_1"
-				(rectangle
-					(start -3.175 3.81)
-					(end 3.175 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
+			(symbol "SW_SPST_1_1"
 				(pin passive line
-					(at 5.08 2.54 180)
+					(at -5.08 0 0)
 					(length 2.54)
 					(name "A"
 						(effects
@@ -4556,7 +4534,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at 5.08 0 180)
 					(length 2.54)
 					(name "B"
 						(effects
@@ -4566,24 +4544,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5027,6 +4987,12 @@
 		(uuid "4c236d83-3196-4567-ad3a-96f219312d60")
 	)
 	(junction
+		(at 229.87 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e3f4d67-4d70-4e04-b771-83d51b1b90e0")
+	)
+	(junction
 		(at 35.56 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5067,6 +5033,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "640566f4-5bea-4c0a-af9c-997a3f2872f1")
+	)
+	(junction
+		(at 223.52 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "64181d6f-c558-40c2-939d-ae2f354986e8")
 	)
 	(junction
 		(at 238.76 81.28)
@@ -5135,12 +5107,6 @@
 		(uuid "df8d1252-d78e-4b7c-b033-504dbdfe0cae")
 	)
 	(junction
-		(at 232.41 111.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e1882566-aaa0-4ae3-a7f8-6a8c88827f26")
-	)
-	(junction
 		(at 232.41 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5163,12 +5129,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eccf1265-e9fe-4914-8999-a5bf8c85a008")
-	)
-	(junction
-		(at 227.33 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ecd754cd-83a6-463f-be67-9d82ec2b22e7")
 	)
 	(junction
 		(at 59.69 85.09)
@@ -5416,7 +5376,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 111.76) (xy 232.41 111.76)
+			(xy 220.98 111.76) (xy 229.87 111.76)
 		)
 		(stroke
 			(width 0)
@@ -5818,6 +5778,17 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 111.76) (xy 246.38 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 165 0 1)
+		)
+		(uuid "459e1ecc-11ef-42b7-901e-266a50d81dbf")
+	)
+	(wire
+		(pts
 			(xy 115.57 66.04) (xy 134.62 66.04)
 		)
 		(stroke
@@ -5836,6 +5807,17 @@
 			(type default)
 		)
 		(uuid "47fb541e-53e6-4752-9c2f-d098a3ba0f53")
+	)
+	(wire
+		(pts
+			(xy 223.52 55.88) (xy 238.76 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 165 0 1)
+		)
+		(uuid "48da7ff2-961f-46f2-9d41-b73c2a570ee2")
 	)
 	(wire
 		(pts
@@ -5946,7 +5928,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 55.88) (xy 227.33 59.69)
+			(xy 223.52 55.88) (xy 223.52 59.69)
 		)
 		(stroke
 			(width 0)
@@ -6060,17 +6042,6 @@
 			(color 255 165 0 1)
 		)
 		(uuid "6b675d4c-adc8-41bf-b47b-6472938fd62e")
-	)
-	(wire
-		(pts
-			(xy 223.52 69.85) (xy 224.79 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 165 0 1)
-		)
-		(uuid "6d02209b-59f5-4912-8afd-3ad1cfeff664")
 	)
 	(wire
 		(pts
@@ -6308,7 +6279,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 111.76) (xy 232.41 113.03)
+			(xy 229.87 111.76) (xy 229.87 113.03)
 		)
 		(stroke
 			(width 0)
@@ -6377,17 +6348,6 @@
 			(type default)
 		)
 		(uuid "8abb9013-e3e5-4a5c-981d-5dc4daa7d74a")
-	)
-	(wire
-		(pts
-			(xy 227.33 55.88) (xy 238.76 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 165 0 1)
-		)
-		(uuid "8b3784ed-fe86-43b2-8dd7-622139a90551")
 	)
 	(wire
 		(pts
@@ -6707,17 +6667,6 @@
 			(type default)
 		)
 		(uuid "a7271b10-10fe-4ea0-b5a7-1dc374dc4c77")
-	)
-	(wire
-		(pts
-			(xy 232.41 111.76) (xy 246.38 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 165 0 1)
-		)
-		(uuid "a75cdb84-65be-487d-935a-d197e6122ad5")
 	)
 	(polyline
 		(pts
@@ -7063,7 +7012,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 55.88) (xy 227.33 55.88)
+			(xy 220.98 55.88) (xy 223.52 55.88)
 		)
 		(stroke
 			(width 0)
@@ -7984,7 +7933,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 116.84 98.298 90)
 			(hide yes)
 			(show_name no)
@@ -8409,7 +8358,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 88.392 29.21 90)
 			(hide yes)
 			(show_name no)
@@ -8458,90 +8407,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPDT")
-		(at 232.41 118.11 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "130bc965-071e-44bb-8396-af832c436b38")
-		(property "Reference" "SW2"
-			(at 226.314 107.442 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "K3-1235S-F1"
-			(at 226.314 109.982 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 232.41 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 224.79 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Switch, single pole double throw"
-			(at 232.41 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2c18a71a-8371-4cd5-b37b-b89fafc5bd42")
-		)
-		(pin "3"
-			(uuid "adb5a5fc-c27c-4c56-97e7-f0ebe1d79f0d")
-		)
-		(pin "2"
-			(uuid "79c2079b-a2bb-4b17-b108-2f0f10fbd830")
-		)
-		(instances
-			(project "industrial_hat_rpi4"
-				(path "/c7b41bf3-9b98-470b-b775-77fee4b05096"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 220.98 99.06 90)
 		(unit 1)
@@ -8572,7 +8437,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 220.98 100.838 90)
 			(hide yes)
 			(show_name no)
@@ -9542,90 +9407,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPDT")
-		(at 227.33 64.77 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "245f7f16-0c70-46d3-b80e-ec1e24c3c780")
-		(property "Reference" "SW1"
-			(at 223.012 50.8 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "K3-1235S-F1"
-			(at 221.488 53.848 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 227.33 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 219.71 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Switch, single pole double throw"
-			(at 227.33 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7b23a1e2-0dcd-44d6-85e0-e4eb602aa61d")
-		)
-		(pin "3"
-			(uuid "4f2c8e30-a881-4c3c-99f2-56a82e2ff9ab")
-		)
-		(pin "2"
-			(uuid "25142895-aa9b-4d4c-8ed0-4483c310b58a")
-		)
-		(instances
-			(project "industrial_hat_rpi4"
-				(path "/c7b41bf3-9b98-470b-b775-77fee4b05096"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 33.02 151.13 90)
 		(unit 1)
@@ -10077,7 +9858,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 90.17 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -10251,7 +10032,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 166.0652 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -10656,7 +10437,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 116.84 100.838 90)
 			(hide yes)
 			(show_name no)
@@ -12101,7 +11882,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_3-G-7,62_1x03_P7.62mm_Horizontal"
 			(at 251.46 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -12620,6 +12401,87 @@
 			(project "industrial_hat_rpi4"
 				(path "/c7b41bf3-9b98-470b-b775-77fee4b05096"
 					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 223.52 64.77 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "95c83b34-e7a8-4fb5-b250-2f5c26c9ca09")
+		(property "Reference" "SW1"
+			(at 224.79 63.4999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "DSIC01TSGER"
+			(at 224.79 66.04 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 223.52 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ace1b372-c74f-48fe-aab9-282b24b9e136")
+		)
+		(pin "1"
+			(uuid "b1c6d5b0-5bdc-4ca7-b2f2-95680ac44a25")
+		)
+		(instances
+			(project "industrial_hat_rpi4"
+				(path "/c7b41bf3-9b98-470b-b775-77fee4b05096"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -13298,7 +13160,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 101.6 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -13550,7 +13412,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_3-G-7,62_1x03_P7.62mm_Horizontal"
 			(at 259.08 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -13760,7 +13622,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
 			(at 233.68 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -14159,7 +14021,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 220.98 98.298 90)
 			(hide yes)
 			(show_name no)
@@ -14677,6 +14539,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 229.87 118.11 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eb1bfb74-b4a4-4799-9d1e-64830fc589e2")
+		(property "Reference" "SW2"
+			(at 231.14 116.8399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "DSIC01TSGER"
+			(at 231.14 119.3799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 229.87 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0b105e56-1305-494f-8f04-669f9c047e89")
+		)
+		(pin "1"
+			(uuid "32143ab3-5a83-4dce-a3eb-599af63fddd9")
+		)
+		(instances
+			(project "industrial_hat_rpi4"
+				(path "/c7b41bf3-9b98-470b-b775-77fee4b05096"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 139.7 49.53 0)
 		(unit 1)
@@ -14788,7 +14732,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 99.822 29.21 90)
 			(hide yes)
 			(show_name no)
@@ -14870,7 +14814,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 124.1552 39.37 0)
 			(hide yes)
 			(show_name no)
