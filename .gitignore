@@ -8,3 +8,4 @@ fp-info-cache
 _autosave*
 gerber/
 jlcpcb/
+.history/
