@@ -12836,7 +12836,7 @@
 		)
 	)
 	(gr_text "B\n"
-		(at 201.4 109.1 0)
+		(at 200.67 109.43 0)
 		(layer "F.SilkS")
 		(uuid "c8b861d3-6672-4772-a0c5-e585bc0e9691")
 		(effects
