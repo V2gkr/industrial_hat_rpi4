@@ -10908,7 +10908,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Converter_DCDC:Converter_DCDC_Murata_CRE1xxxxxxSC_THT"
+		(property "Footprint" "aaa_custom_library:Converter_DCDC_Murata_CRE1xxxxxxSC_THT_jlcpcb_pnp_custom"
 			(at 118.11 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -11436,7 +11436,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical"
+		(property "Footprint" "aaa_custom_library:PinSocket_2x20_P2.54mm_Vertical_jlcbpcb_pnp_custom"
 			(at 41.91 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -12894,7 +12894,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_3-G-7,62_1x03_P7.62mm_Horizontal"
+		(property "Footprint" "aaa_custom_library:PhoenixContact_MSTBA_2,5_3-G-5,08_1x03_P5.08mm_Horizontal"
 			(at 261.62 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -14711,7 +14711,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_3-G-7,62_1x03_P7.62mm_Horizontal"
+		(property "Footprint" "aaa_custom_library:PhoenixContact_MSTBA_2,5_3-G-5,08_1x03_P5.08mm_Horizontal"
 			(at 264.16 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -14942,7 +14942,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+		(property "Footprint" "aaa_custom_library:PinSocket_1x02_P2.54mm_Vertical_jlcpcb_pnp_custom"
 			(at 261.62 88.9 0)
 			(hide yes)
 			(show_name no)
